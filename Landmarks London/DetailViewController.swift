@@ -27,6 +27,10 @@ class DetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // Rounds the edges on the Button and mapview
+        directionButton.layer.cornerRadius = 5
+        detailMapView.layer.cornerRadius = 5
+        
         self.navigationItem.title = sentData1
     }
 
