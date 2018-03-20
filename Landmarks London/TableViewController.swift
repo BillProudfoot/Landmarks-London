@@ -110,6 +110,10 @@ class TableViewController: UITableViewController {
                 
                 dvc.sentData1 = titleList[indexPath.row] as String
                 
+                dvc.sentData2 = descriptionList[indexPath.row] as String
+                
+                dvc.sentData3 = imageList[indexPath.row] as String
+                
             }
             
         }

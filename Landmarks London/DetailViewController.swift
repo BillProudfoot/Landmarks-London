@@ -13,6 +13,8 @@ import MapKit
 class DetailViewController: UIViewController {
     
     var sentData1:String!
+    var sentData2:String!
+    var sentData3:String!
     
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
@@ -32,6 +34,11 @@ class DetailViewController: UIViewController {
         detailMapView.layer.cornerRadius = 5
         
         self.navigationItem.title = sentData1
+        
+        detailTitle.text = sentData1
+        detailDescription.text = sentData2
+        detailImageView.image = UIImage(named: sentData3)
+        
     }
 
     override func didReceiveMemoryWarning() {
