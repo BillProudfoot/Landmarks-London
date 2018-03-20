@@ -24,6 +24,8 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,14 +95,26 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+      
+        if (segue.identifier == "showDetail") {
+            
+            let dvc = segue.destination as! DetailViewController
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                dvc.sentData1 = titleList[indexPath.row] as String
+                
+            }
+            
+        }
+      
     }
-    */
+    
 
 }
