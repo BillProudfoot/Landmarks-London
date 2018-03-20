@@ -119,6 +119,9 @@ class DetailViewController: UIViewController {
     }
     */
     @IBAction func directions(_ sender: UIButton) {
+        
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/maps?daddr=\(latitude),\(longitude)")!, options: [:], completionHandler: nil)
+        
     }
     
 }
