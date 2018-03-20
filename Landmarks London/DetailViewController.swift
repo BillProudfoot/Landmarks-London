@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import MapKit
+
 
 class DetailViewController: UIViewController {
     
     var sentData1:String!
-
+    
+    @IBOutlet weak var detailImageView: UIImageView!
+    @IBOutlet weak var detailTitle: UILabel!
+    @IBOutlet weak var detailDescription: UILabel!
+    @IBOutlet weak var detailTextView: UITextView!
+    @IBOutlet weak var detailMapView: MKMapView!
+    @IBOutlet weak var directionButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,5 +45,7 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func directions(_ sender: UIButton) {
+    }
+    
 }
