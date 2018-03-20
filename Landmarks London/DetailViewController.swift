@@ -37,8 +37,35 @@ class DetailViewController: UIViewController {
         
         detailTitle.text = sentData1
         detailDescription.text = sentData2
+        
         detailImageView.image = UIImage(named: sentData3)
         
+        if detailTitle.text == "Big Ben" {
+            
+            detailTextView.text = "Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower"
+        }
+        
+        if detailTitle.text == "Buckingham Palace" {
+            
+            detailTextView.text = "Buckingham Palace is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality."
+        }
+        
+        if detailTitle.text == "London Eye" {
+            
+            detailTextView.text = "The London Eye is a giant Ferris wheel on the South Bank of the River Thames in London. The structure is 443 feet tall and the wheel has a diameter of 394 feet. When it opened to the public in 2000 it was the world's tallest Ferris wheel."
+        }
+        if detailTitle.text == "St-Pauls Cathedral" {
+            
+            detailTextView.text = "St Paul's Cathedral, London, is an Anglican cathedral, the seat of the Bishop of London and the mother church of the Diocese of London. It sits on Ludgate Hill at the highest point of the City of London and is a Grade I listed building"
+        }
+        if detailTitle.text == "Tower Bridge" {
+            
+            detailTextView.text = "Tower Bridge is a combined bascule and suspension bridge in London built between 1886 and 1894. The bridge crosses the River Thames close to the Tower of London and has become an iconic symbol of London."
+        }
+        if detailTitle.text == "Westminster Abbey" {
+            
+            detailTextView.text = "The Westminster Abbey Museum was located in the 11th-century vaulted undercroft beneath the former monks' dormitory in Westminster Abbey, London, England"
+        }
     }
 
     override func didReceiveMemoryWarning() {
